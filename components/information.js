@@ -1,14 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
 
-export default function information({title, imageSource, desc}) {
+export default function Information({title, imageSource, desc}) {
   return (
     <View>
       <Image source={imageSource} style={styles.img}/>
-      <Viev style={styles.descTitle}>
+      <View style={styles.descTitle}>
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.textDesc}>{desc}</Text>
-      </Viev>
+      </View>
     </View>
   )
 }
